@@ -102,3 +102,7 @@ dist
 
 # TernJS port file
 .tern-port
+
+# fetch-notion-pages scope
+test/config.js
+test/result.json
