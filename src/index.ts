@@ -1,4 +1,4 @@
-import { PropertyItemPropertyItemListResponse } from '@notionhq/client/build/src/api-endpoints.js';
+import type { PropertyItemPropertyItemListResponse } from '@notionhq/client/build/src/api-endpoints.js';
 
 import { TaskManager } from './task-manager.js';
 import { FetcherOptions, PageId } from './types';

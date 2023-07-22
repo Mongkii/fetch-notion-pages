@@ -1,12 +1,16 @@
 {
   "name": "fetch-notion-pages",
-  "version": "1.0.5",
+  "version": "1.0.6",
   "description": "Fetch full Notion pages with only one function call. This package handles request limits, pagination, block children fetching, etc., so you don't have to care about any details, just fetch pages!",
   "type": "module",
   "main": "dist/index.js",
+  "types": "dist/index.d.ts",
+  "exports": {
+    "import": "./dist/index.js",
+    "require": "./dist/index.umd.cjs"
+  },
   "scripts": {
-    "clean": "rm -rf dist",
-    "build": "npm run clean && tsc",
+    "build": "vite build --mode production",
     "prepublishOnly": "npm run build"
   },
   "keywords": [
@@ -19,7 +23,9 @@
   "author": "Mongkii",
   "license": "MIT",
   "devDependencies": {
-    "@notionhq/client": "^2.1.1",
-    "typescript": "^4.7.4"
+    "@notionhq/client": "^2.2.8",
+    "typescript": "^5.1.6",
+    "vite": "^4.4.6",
+    "vite-plugin-dts": "^3.3.1"
   }
 }
